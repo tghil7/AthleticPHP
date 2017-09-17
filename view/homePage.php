@@ -8,21 +8,33 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <link type="text/css" rel="stylesheet" href="../style/athletic.css">
-     <script>
-         var session;
-         $(window).load(function(){
-             if(session == undefined){
-                 $('#myModal').modal('show');
-               session ="started";
-           }
-         });
-         
-     </script>
-     
-
+      <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
+      <script src="../style/Athletic.js"></script>
 </head>
 <body class="container-fluid">
-         
+    
+      <div id= "siteMenu" class="dropdown">
+				  <h6>Menu</h6>
+				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
+							   <ul class="dropdown-menu">
+                                                               <li><a href="aboutUs.php">About </a></li>
+                                                                <li><a href="Diagnostic.php">Diagnostic</a></li>
+                                                                <li><a href="contactUs.php">Contact </a></li>
+							  </ul>
+                            
+				   
+				  </div>
+				  
+				  <div id="searchSection"  >
+				    <h3 class="carousel-caption">Learn about athletic training</h3>
+                                    <form action="../controller/index.php" method="post">
+					   <input type="search" id="searchBox" name="action" placeholder="Search Athletic Keyword" > &nbsp; &nbsp;
+                                           <button class= "btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
+                                           
+                                    </form>                   
+				                  
+			      </div>
+      
 		          <div id ="myCarousel" class="carousel slide" data-ride ="carousel" >
 				  
 				  
@@ -34,19 +46,19 @@
 				        </ol> 
 
                               <div class="carousel-inner" role="listbox">
-							     <div class="item active" style="width: 100%">
-                                                                 <img src = "../images/hoop.jpg" alt="hoop"/>
+							     <div class="item active">
+                                                                 <img src = "../images/hoop.jpg" alt="hoop" class="mainImage"/>
 								 </div>
-								 <div class="item" style="width: 100%">
-                                                                     <img src = "../images/athletegirl.jpg" alt="runner" />
+								 <div class="item">
+                                                                     <img src = "../images/athletegirl.jpg" alt="runner" class="mainImage" />
 								 </div>
-								 <div class="item" style="width: 100%">
-                                                                     <img src = "../images/athletic.JPG" alt="soccer" />
+								 <div class="item">
+                                                                     <img src = "../images/athletic.JPG" alt="soccer" class="mainImage" />
 								 </div>
 							  </div>
                                                            					  
 			      </div>
-                             <div class="modal fade" id="myModal" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+                             <div class="modal fade" id="myModal" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">
                                             <div class="modal-header">
@@ -64,36 +76,11 @@
                                         </div>    
                                  </div>
                              </div>
-				  <div id= "siteMenu" class="dropdown">
-				  <h5>Menu</h5>
-				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
-							   <ul class="dropdown-menu">
-                                                               <li><a href="aboutUs.php">About </a></li>
-                                                                <li><a href="Diagnostic.php">Diagnostic</a></li>
-                                                                <li><a href="contactUs.php">Contact </a></li>
-							  </ul>
-                            
-				   
-				  </div>
-				  
-				  <div id="searchSection"  style="top: 50%; left: 50%; margin-right: -50%;  transform: translate(-50%, -50%); align-items: center; justify-content: center">
-				    <h3 class="carousel-caption" style="display: block; text-align:center; align-items: flex-start">Learn about athletic training</h3>
-                                    <form action="../controller/index.php" method="post">
-					   <input type="search" id="searchBox" name="action" placeholder="Search Athletic Keyword" style="z-index: 1"> &nbsp; &nbsp;
-                                           <button class= "btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
-                                           <input type="hidden" name="site" value="Columbia" />
-                                           <input type="hidden" name="client" value="columbia" />
-                                           <input type="hidden" name="proxystylesheet" value="columbia2" />
-                                           <input type="hidden" name="output" value="xml_no_dtd" />
-                                           <input type="hidden" name="filter" value="0" />
-                                           
-                                    </form>                   
-				                  
-			      </div>
+				
    
-		
+   		
 		 
-            <footer style="bottom: 0px; padding-left: 50px; text-align: center; padding-top: 5px; clear: both"><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
+            <footer><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
     webmaster@athletictrainer.com</i></p></small</footer>		 
 </body>
 </html>

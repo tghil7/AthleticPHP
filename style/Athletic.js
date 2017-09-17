@@ -241,3 +241,12 @@ function showError(error) {
             break;
     }
 }
+         var session;
+         $(window).load(function(){
+             if(session == undefined){
+                 $('#myModal').modal('show');
+               session ="started";
+           }
+         });
+         
+    

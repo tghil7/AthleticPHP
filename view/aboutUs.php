@@ -14,6 +14,7 @@ and open the template in the editor.
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <link type="text/css" rel="stylesheet" href="../style/athletic.css">
       <script type ="text/javascript" src="../style/Athletic.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
     </head>
     <body class="container-fluid">
         <div id="wrapper">
