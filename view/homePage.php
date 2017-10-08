@@ -12,18 +12,28 @@
       <script src="../style/Athletic.js"></script>
 </head>
 <body class="container-fluid">
-    
-      <div id= "siteMenu" class="dropdown">
+                        <div id="myNav">
+                                <div id= "siteMenu" class="dropdown">
 				  <h6>Menu</h6>
 				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
-							   <ul class="dropdown-menu">
-                                                               <li><a href="aboutUs.php">About </a></li>
-                                                                <li><a href="Diagnostic.php">Diagnostic</a></li>
-                                                                <li><a href="contactUs.php">Contact </a></li>
-							  </ul>
+					<ul class="dropdown-menu">
+                                            <li><a href="homePage.php">Home</a></li>
+                                            <li><a href="aboutUs.php">About </a></li>
+                                            <li><a href="Diagnostic.php">Diagnostic</a></li>
+                                            <li><a href="contactUs.php">Contact </a></li>
+					</ul>
                             
 				   
 				  </div>
+                                  <div id="inlineNav" >
+                                        <ul class="nav nav-pills">
+                                            <li><a href="homePage.php">Home</a></li>
+                                            <li><a  href="aboutUs.php" >About</a></li>
+                                            <li><a  href="Diagnostic.php">Diagnostic</a></li>
+                                            <li><a  href="contactUs.php">Contact</a></li>                
+                                        </ul>
+                                  </div>
+                        </div>
 				  
 				  <div id="searchSection"  >
 				    <h3 class="carousel-caption">Learn about athletic training</h3>
@@ -80,8 +90,8 @@
    
    		
 		 
-            <footer><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
-    webmaster@athletictrainer.com</i></p></small</footer>		 
+    <footer class="footer"> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<br><a href="mailto:webmaster@athletictrainer.com">
+    webmaster@athletictrainer.com</footer>		 
 </body>
 </html>
 

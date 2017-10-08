@@ -18,14 +18,28 @@ and open the template in the editor.
     </head>
     <body class="container-fluid">
         <div id="wrapper">
-        <div id="myTopnav" style="padding-right: 300px" >
-           <ul class="nav navbar-nav" >
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="homePage.php" style="color: black;font-weight: bold">Home</a></li>
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="diagnostic.php" style="color: black;font-weight: bold">Diagnostic</a></li>
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="contactUs.php" style="color: black;font-weight: bold">Contact</a></li>
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="aboutUs.php" class="active" style="color: black;font-weight: bold">About</a></li>
-           </ul>
-        </div>
+        <div id="myNav">
+                               <div id= "siteMenu" class="dropdown">
+				  <h6>Menu</h6>
+				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
+					<ul class="dropdown-menu">
+                                            <li><a href="homePage.php">Home</a></li>
+                                            <li><a href="aboutUs.php">About </a></li>
+                                            <li><a href="Diagnostic.php">Diagnostic</a></li>
+                                            <li><a href="contactUs.php">Contact </a></li>
+					</ul>
+                            
+				   
+				  </div>
+                                  <div id="inlineNav" >
+                                        <ul class="nav nav-pills">
+                                            <li><a href="homePage.php">Home</a></li>
+                                            <li><a  href="aboutUs.php" >About</a></li>
+                                            <li><a  href="Diagnostic.php">Diagnostic</a></li>
+                                            <li><a  href="contactUs.php">Contact</a></li>                
+                                        </ul>
+                                  </div>
+              </div>
          <div id="imageTrail">
              <img src="../images/runningnike.jpg" alt="otherRunner" class="aboutImage" >
              <img src="../images/foot1.jpg" class="aboutImage">
@@ -34,18 +48,19 @@ and open the template in the editor.
              <img src="../images/swimmer.jpg" class="aboutImage">
          </div>
         <div id="navigationLink">
-            <a href="homePage.php" style="color: black;font-weight: bold">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="aboutUs.php" style="color: black;font-weight: bold">About Us</a>   
+            <a href="homePage.php">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="aboutUs.php">About Us</a>   
         </div>
-        <p id="description" style ="text-align: center; margin-left:75px; margin-right: 50px; margin-top: 35px; margin-bottom: 150px;  "> This website is the idea of a certified athletic trainer  who wanted to have a quick reference handy in order to 
+        <p id="description"> This website is the idea of a certified athletic trainer  who wanted to have a quick reference handy in order to 
         remind herself of athletic training notions she may have forgotten.We started working on the project during our free time. 
          Please free to send us any comments or proposed corrections.</p>
     
-        </div>
+        
         
         <p id="demo"></p>
        <div id="mapholder" onload="getLocation()"></div>
 
                 <footer class="footer"><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
     webmaster@athletictrainer.com</i></p></small</footer>
+     </div>
     </body>
 </html>

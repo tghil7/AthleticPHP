@@ -215,38 +215,58 @@ function getLocation() {
     }
 }
 
-function showPosition(position) {
-    var latlon = position.coords.latitude + "," + position.coords.longitude;
 
-    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    +latlon+"&zoom=14&size=400x300&sensor=false&key=AIzaSyBhmG7NpY-P1Sb39eFYz8kJ09DPZaxRAr0";
-    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-}
-//To use this code on your website, get a free API key from Google.
-//Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+var session;
+$(window).load(function(){
+if(session === undefined){
+$('#myModal').modal('show');
+session ="started";
+ }
+});
 
-function showError(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            x.innerHTML = "User denied the request for Geolocation.";
-            break;
-        case error.POSITION_UNAVAILABLE:
-            x.innerHTML = "Location information is unavailable.";
-            break;
-        case error.TIMEOUT:
-            x.innerHTML = "The request to get user location timed out.";
-            break;
-        case error.UNKNOWN_ERROR:
-            x.innerHTML = "An unknown error occurred.";
-            break;
+
+   
+$("#contactBody").ready(function(){
+var menuImage = document.getElementById("menuImage");
+if ( menuImage != null)
+{
+var dish = new Array(6);
+var curDish = 0;
+dish[0] = "uniqueRunner1.jpg";
+dish[1] = "uniqueRunner2.jpg";
+dish[2] = "uniqueRunner3.jpg";
+dish[3] = "uniqueRunner4.jpg";
+dish[4] = "uniqueRunner5.jpg";
+dish[5] = "uniqueRunner6.jpg";
+function displayImage(){
+    if (curDish == 5)
+        curDish = 0;
+    else
+    {
+        curDish++;
+         document.getElementById("menuImage").src = "../images/" + dish[curDish];         
     }
-}
-         var session;
-         $(window).load(function(){
-             if(session == undefined){
-                 $('#myModal').modal('show');
-               session ="started";
-           }
-         });
+   }     
+ setInterval(displayImage, 500);
+ }
+});
+
+       
+  //<![CDATA[
+    function reset() 
+    {
+        document.getElementById("firstName").value = '';
+        document.getElementById("lastName").value = '';
+        document.getElementById("eMail").value = '';
+    }
+    
+
+
+
+
+      
+     
+   // ]]> 
+
          
     

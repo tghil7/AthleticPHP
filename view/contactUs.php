@@ -15,79 +15,34 @@ and open the template in the editor.
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script type ="text/javascript" src="../style/Athletic.js"></script>
      <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet"> 
-        <script  type="text/javascript">
-  //<![CDATA[
-    function reset() 
-    {
-        document.getElementById("firstName").value = '';
-        document.getElementById("lastName").value = '';
-        document.getElementById("eMail").value = '';
-    }
-    
    
-setInterval('displayImage()', 500);
- 
-var dish = new Array(6);
-var curDish = 0;
-dish[0] = "uniqueRunner1.jpg";
-dish[1] = "uniqueRunner2.jpg";
-dish[2] = "uniqueRunner3.jpg";
-dish[3] = "uniqueRunner4.jpg";
-dish[4] = "uniqueRunner5.jpg";
-dish[5] = "uniqueRunner6.jpg";
-
-function displayImage() 
-{
-    if (curDish == 5)
-        curDish = 0;
-    else
-    {
-        curDish++;
-         document.getElementById("menuImage").src = "../images/" + dish[curDish];         
-    }
-}
-      
-     
-   // ]]> 
-</script>
-<style>
- body
-{
-   margin-left: 25px;
-   margin-bottom: 10px; 
-    background-image: url('../images/jumpman.jpg') !important;
-    background-repeat: no-repeat  !important;
-   
-}
-
-#runner
-{
-    float: right  !important;
-}
-
-#contactForm 
-{
-    float: left  !important;
-}
-
-
-
-
-</style>
-    
 </head>
-    <body class="container-fluid">
+    <body id="contactBody" class="container-fluid">
         <div id="wrapper">
-        <div class="container" id="myTopnav">
-           <ul class="nav navbar-nav">
-                <li style="margin-left: 50px; margin-right: 50px;color: black;"><a href="homePage.php" style="color: black;font-weight: bold">Home</a></li>
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="diagnostic.php" style="color: black;font-weight: bold">Diagnostic</a></li>
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="contactUs.php" style="color: black;font-weight: bold">Contact</a></li>
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="aboutUs.php" style="color: black;font-weight: bold" class="active">About</a></li>
-           </ul>
-        </div>
+        <div id="myNav">
+                               <div id= "siteMenu" class="dropdown">
+				  <h6>Menu</h6>
+				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
+					<ul class="dropdown-menu">
+                                            <li><a href="homePage.php">Home</a></li>
+                                            <li><a href="aboutUs.php">About </a></li>
+                                            <li><a href="Diagnostic.php">Diagnostic</a></li>
+                                            <li><a href="contactUs.php">Contact </a></li>
+					</ul>
+                            
+				   
+				  </div>
+                                  <div id="inlineNav" >
+                                        <ul class="nav nav-pills">
+                                            <li><a href="homePage.php">Home</a></li>
+                                            <li><a  href="aboutUs.php" >About</a></li>
+                                            <li><a  href="Diagnostic.php">Diagnostic</a></li>
+                                            <li><a  href="contactUs.php">Contact</a></li>                
+                                        </ul>
+                                  </div>
+              </div>
             <div id="navigationLink">
-            <a href="homePage.php" style="color: black">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="contactUs.php" style="color: black">Contact Us</a>   
+            <a href="homePage.php" style="color: black">Home</a>&nsbp;<span class="glyphicon glyphicon-chevron-right"></span>&nsbp;<a href="contactUs.php" style="color: black">Contact Us</a>   
         </div>
         <div id ="contactPage">
               <h4>Main Address:</h4>

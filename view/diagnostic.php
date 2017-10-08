@@ -15,58 +15,37 @@ and open the template in the editor.
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="../style/Athletic.js"></script> 
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
-      <style>
-          .footer
-          {
-           clear: both;
-           bottom: 5px; 
-           padding-left:250px; 
-           padding-right: 150px;
-           padding-top: 50px;
-           text-align: center;
-          }
-          
-          #injuryCheck
-          {
-            margin-left: 150px;  
-          }
-          
-          #diagnosticTest
-          {
-              margin-left: 10px;
-          }
-          
-          #bodyPart 
-          {
-              margin-right: 200px;
-              margin-top: 100px;
-              margin-left: 20px;
-              margin-bottom: 200px;
-          }
-          
-          body
-          {
-              margin-left: 25px;
-              margin-bottom: 10px; 
-              background-image: url('../images/jumpman.jpg') !important;
-              background-repeat: no-repeat  !important;   
-          }
-          
-      </style>
+      
     
     </head>
-    <body>
+    <body id="diagnosticBody">
         <div id="wrapper" class="container-fluid">
-           <div class="container" id="myTopnav" style="background-color:">
-               <ul class="nav navbar-nav" >
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="homePage.php" style="color: black;font-weight: bold">Home</a></li>
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="diagnostic.php" style="color: black;font-weight: bold">Diagnostic</a></li>
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="contactUs.php" style="color: black;font-weight: bold">Contact</a></li>
-                <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="aboutUs.php" class="active" style="color: black;font-weight: bold">About</a></li>
-              </ul>
-          </div>
-            <div id="navigationLink">
-                <a href="homePage.php" style="color: black;font-weight: bold">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="diagnostic.php" style="color: black;font-weight: bold">Diagnostic</a>   
+              <div id="myNav">
+                               <div id= "siteMenu" class="dropdown">
+				  <h6>Menu</h6>
+				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
+					<ul class="dropdown-menu">
+                                            <li><a href="homePage.php">Home</a></li>
+                                            <li><a href="aboutUs.php">About </a></li>
+                                            <li><a href="Diagnostic.php">Diagnostic</a></li>
+                                            <li><a href="contactUs.php">Contact </a></li>
+					</ul>
+                            
+				   
+				  </div>
+                                  <div id="inlineNav" >
+                                        <ul class="nav nav-pills">
+                                            <li><a href="homePage.php">Home</a></li>
+                                            <li><a  href="aboutUs.php" >About</a></li>
+                                            <li><a  href="Diagnostic.php">Diagnostic</a></li>
+                                            <li><a  href="contactUs.php">Contact</a></li>                
+                                        </ul>
+                                  </div>
+              </div>
+            <div id="navigationLink" class="downMenu">
+                <a href="homePage.php">Home</a>
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <a href="diagnostic.php">Diagnostic</a>   
             </div >
             <div id="bodyPart">
                 <h5>What part of the body is experiencing the condition?(Please select one at a time):</h5><br><br><br>
@@ -81,11 +60,11 @@ and open the template in the editor.
             </div>
             
                
-            <footer class="footer"><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
-    webmaster@athletictrainer.com</i></p></small</footer>
+            <footer class="footer">Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
+    webmaster@athletictrainer.com</footer>
         </div>    
             
-         <div class="modal fade" id="myElbowModal1" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+         <div class="modal fade" id="myElbowModal1" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">
                                             
@@ -101,7 +80,7 @@ and open the template in the editor.
          </div>
         
         
-        <div class="modal fade" id="myElbowModal2" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+        <div class="modal fade" id="myElbowModal2" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -118,26 +97,9 @@ and open the template in the editor.
         
         
         
-        <div class="modal fade" id="myModal" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
-                                 <div class="modial-dialog modal-sm">
-                                       <div class="modal-content">
-                                            <div class="modal-header">
-                                                <a class="close" data-dismiss="modal">×</a>
-                                                <h3>Warning!</h3>
-                                            </div>
-                                            <div class="modal-body">
-                                                 <p>This website is just a student project on Web development. I do not own the pictures displayed.
-                                                  It should not be used as a complete reference to diagnose athletic injuries.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                  <a href="#" class="btn alert-success" data-dismiss="modal">Close</a>
-                                        
-                                            </div>
-                                        </div>    
-                                 </div>
-         </div>
         
-          <div class="modal fade" id="myAnkleModal1" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+        
+          <div class="modal fade" id="myAnkleModal1" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -152,7 +114,7 @@ and open the template in the editor.
                                  </div>
           </div>
         
-        <div class="modal fade" id="myAnkleModal2" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+        <div class="modal fade" id="myAnkleModal2" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -167,7 +129,7 @@ and open the template in the editor.
                                  </div>
           </div>
         
-        <div class="modal fade" id="myAnkleModal3" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+        <div class="modal fade" id="myAnkleModal3" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -182,7 +144,7 @@ and open the template in the editor.
                                  </div>
           </div>
         
-         <div class="modal fade" id="myGroinModal1" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+         <div class="modal fade" id="myGroinModal1" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -197,7 +159,7 @@ and open the template in the editor.
                                  </div>
           </div>
         
-         <div class="modal fade" id="myGroinModal2" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+         <div class="modal fade" id="myGroinModal2" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -212,7 +174,7 @@ and open the template in the editor.
                                  </div>
           </div>
         
-        <div class="modal fade" id="myThighModal1" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+        <div class="modal fade" id="myThighModal1" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -227,7 +189,7 @@ and open the template in the editor.
                                  </div>
           </div>
         
-        <div class="modal fade" id="myThighModal2" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+        <div class="modal fade" id="myThighModal2" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -242,7 +204,7 @@ and open the template in the editor.
                                  </div>
           </div>
         
-        <div class="modal fade" id="myThighModal3" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+        <div class="modal fade" id="myThighModal3" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -257,7 +219,7 @@ and open the template in the editor.
                                  </div>
           </div>
         
-            <div class="modal fade" id="myKneeModal1" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+            <div class="modal fade" id="myKneeModal1" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -272,7 +234,7 @@ and open the template in the editor.
                                  </div>
           </div>
         
-        <div class="modal fade" id="myKneeModal2" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+        <div class="modal fade" id="myKneeModal2" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
@@ -287,7 +249,7 @@ and open the template in the editor.
                                  </div>
           </div>
         
-        <div class="modal fade" id="myKneeModal3" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+        <div class="modal fade" id="myKneeModal3" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">

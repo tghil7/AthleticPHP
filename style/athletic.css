@@ -24,6 +24,42 @@ body{
 }
 
 
+
+#contactBody{
+    background-image: url('../images/jumpman.jpg') !important;
+    background-repeat: no-repeat  !important;
+    display:flex;
+   
+}
+
+
+
+
+
+#bodyPart{
+    margin-top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat  !important; 
+}
+
+#navigationLink{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+
+
+#navigationLink a{
+    color: black;
+    font-weight: bold;
+}
+
 .carousel-inner .item img
 {  
     height: auto;
@@ -44,7 +80,7 @@ body{
   
     
     #myCarousel{
-        z-index: -1
+        z-index: -1;
     }
 
 
@@ -75,9 +111,13 @@ body{
     top: 0;
     left:5%;
     justify-content: center;
-    z-index: 1;
+    z-index: 10;
     order: 1;
     font-size: x-small;
+}
+
+#inlineNav {
+    display: none;
 }
 
 .nav navbar-nav > li
@@ -89,6 +129,7 @@ body{
 
 
 
+
 #contactPage
 {
     margin-left: 25px;
@@ -96,25 +137,28 @@ body{
 
 .aboutImage
 {
-    height: 183px;
-    width:  250px;
+    height: auto;
+    width:  100%;
 }
 
 #imageTrail
 {
-   display: inline-block;
-   margin-top: 20px;
-   margin-left: 30px;
-   margin-right: 10px;
-   min-width: 100%;  
-   clear: right;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+   
 }
 
 .footer {
-   width:100%;
-   height:auto;   /* Height of the footer */
-   text-align: center;
-   justify-content: center; 
+    font-size: x-small; 
+    font-style: italic;
+    color: black; 
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;               
+  
 }
 }
 
@@ -133,6 +177,8 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+
+#wrapper{}
 
 .carousel-inner .item img
 {
@@ -156,14 +202,16 @@ body{
 
 #searchSection
 {
-	top: 300px;	
+    position: fixed;
+    top: 40%;
+    left: auto;
+    right: auto;
+    justify-content: center;
 }
 
 #siteMenu
 {
-	top: 10px;
-	left: 20px;
-	
+  display: none;
 }
 
 .nav navbar-nav > li
@@ -182,16 +230,15 @@ body{
 
 .aboutImage
 {
-    height: 183px;
-    width:  250px;
+    height: auto;
+    width:  20%;
 }
 
 #imageTrail
 {
-   display: inline-block;
-   margin-top: 20px;
-   margin-left: 30px;
-   margin-right: 10px;
+   
+   margin-top: 15%;
+   
    min-width: 100%;  
    clear: right;
 }
