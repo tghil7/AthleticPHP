@@ -13,16 +13,16 @@ and open the template in the editor.
       <link type="text/css" rel="stylesheet" href="../style/athletic.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="../style/Athletic.js"></script> 
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
+      <script src="../js/Athletic.js"></script>
       
     
     </head>
     <body id="diagnosticBody">
-        <div id="wrapper" class="container-fluid">
+        <div id="wrapper" class="container-fluid white">
               <div id="myNav">
-                               <div id= "siteMenu" class="dropdown">
-				  <h6>Menu</h6>
+                               <div id= "siteMenu" class="dropdown white">
+				 
 				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
 					<ul class="dropdown-menu">
                                             <li><a href="homePage.php">Home</a></li>
@@ -48,8 +48,8 @@ and open the template in the editor.
                 <a href="diagnostic.php">Diagnostic</a>   
             </div >
             <div id="bodyPart">
-                <h5>What part of the body is experiencing the condition?(Please select one at a time):</h5><br><br><br>
-                <form>
+                <h5>What part of the body is experiencing the condition?(Please select one at a time):</h5><br/><br/>
+                <form id="myMessage">
                      <input type="radio" name="part" id="part1" value="Elbow" >Elbow<br>
                       <input type="radio" name="part" id="part2" value="Ankle" >Ankle<br>
                       <input type="radio"  name="part" id="part3" value="Groin" >Groin<br>
@@ -60,8 +60,8 @@ and open the template in the editor.
             </div>
             
                
-            <footer class="footer">Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
-    webmaster@athletictrainer.com</footer>
+            <footer class="footer"><small><i>Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
+                            webmaster@athletictrainer.com</i></small></footer>
         </div>    
             
          <div class="modal fade" id="myElbowModal1" tabindex="-1">

@@ -13,15 +13,15 @@ and open the template in the editor.
       <link type="text/css" rel="stylesheet" href="../style/athletic.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <script type ="text/javascript" src="../style/Athletic.js"></script>
      <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet"> 
+     <script src="../js/Athletic.js"></script>
    
 </head>
-    <body id="contactBody" class="container-fluid">
+    <body id="contactBody" class="container-fluid white">
         <div id="wrapper">
         <div id="myNav">
-                               <div id= "siteMenu" class="dropdown">
-				  <h6>Menu</h6>
+                               <div id= "siteMenu" class="dropdown white">
+				 
 				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
 					<ul class="dropdown-menu">
                                             <li><a href="homePage.php">Home</a></li>
@@ -42,7 +42,7 @@ and open the template in the editor.
                                   </div>
               </div>
             <div id="navigationLink">
-            <a href="homePage.php" style="color: black">Home</a>&nsbp;<span class="glyphicon glyphicon-chevron-right"></span>&nsbp;<a href="contactUs.php" style="color: black">Contact Us</a>   
+            <a href="homePage.php" >Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="contactUs.php">Contact Us</a>   
         </div>
         <div id ="contactPage">
               <h4>Main Address:</h4>
@@ -66,8 +66,8 @@ and open the template in the editor.
           </div>    
 </div>
         
-                <footer style="bottom: 0px; padding-left: 50px; text-align: center; padding-top: 5px; clear: both"><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
-    webmaster@athletictrainer.com</i></p></small</footer>
+                <footer class="footer"><small><i>Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
+                            webmaster@athletictrainer.com</i></small></footer>
         </div>
     </body>
 </html>

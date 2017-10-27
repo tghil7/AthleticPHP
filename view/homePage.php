@@ -9,12 +9,12 @@
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <link type="text/css" rel="stylesheet" href="../style/athletic.css">
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
-      <script src="../style/Athletic.js"></script>
+      <script src="../js/Athletic.js"></script>
 </head>
 <body class="container-fluid">
                         <div id="myNav">
                                 <div id= "siteMenu" class="dropdown">
-				  <h6>Menu</h6>
+				  
 				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
 					<ul class="dropdown-menu">
                                             <li><a href="homePage.php">Home</a></li>
@@ -43,7 +43,7 @@
                                            
                                     </form>                   
 				                  
-			      </div>
+			          </div>
       
 		          <div id ="myCarousel" class="carousel slide" data-ride ="carousel" >
 				  
@@ -68,30 +68,13 @@
 							  </div>
                                                            					  
 			      </div>
-                             <div class="modal fade" id="myModal" tabindex="-1">
-                                 <div class="modial-dialog modal-sm">
-                                       <div class="modal-content">
-                                            <div class="modal-header">
-                                                <a class="close" data-dismiss="modal">×</a>
-                                                <h3>Warning!</h3>
-                                            </div>
-                                            <div class="modal-body">
-                                                 <p>This website is just a student project on Web development. I do not own the pictures displayed.
-                                                  It should not be used as a complete reference to diagnose athletic injuries.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                  <a href="#" class="btn alert-success" data-dismiss="modal">Close</a>
-                                        
-                                            </div>
-                                        </div>    
-                                 </div>
-                             </div>
+                             
 				
    
    		
 		 
-    <footer class="footer"> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<br><a href="mailto:webmaster@athletictrainer.com">
-    webmaster@athletictrainer.com</footer>		 
+     <footer class="footer"><small><i>Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
+                            webmaster@athletictrainer.com</i></small></footer>		 
 </body>
 </html>
 

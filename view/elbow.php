@@ -14,21 +14,35 @@ and open the template in the editor.
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
+      <script src="../js/Athletic.js"></script>
     </head>
-    <body>
-        <div class="container" id="myTopnav" style="margin-bottom: 150px;">
-           <ul class="nav navbar-nav" >
-                  <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="../view/homePage.php">Home</a></li>
-               <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="../view/diagnostic.php">Diagnostic</a></li>
-               <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="../view/contactUs.php">Contact</a></li>
-               <li style="margin-left: 25px; margin-right: 50px;color: black;"><a href="../view/aboutUs.php" class="active">About</a></li>
-           </ul>
-
-        </div>
+    <body class="container-fluid myBackground">
+        <div id="myNav">
+                               <div id= "siteMenu" class="dropdown">
+				  
+				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
+					<ul class="dropdown-menu">
+                                            <li><a href="homePage.php">Home</a></li>
+                                            <li><a href="aboutUs.php">About </a></li>
+                                            <li><a href="Diagnostic.php">Diagnostic</a></li>
+                                            <li><a href="contactUs.php">Contact </a></li>
+					</ul>
+                            
+				   
+				  </div>
+                                  <div id="inlineNav" >
+                                        <ul class="nav nav-pills">
+                                            <li><a href="homePage.php">Home</a></li>
+                                            <li><a  href="aboutUs.php" >About</a></li>
+                                            <li><a  href="Diagnostic.php">Diagnostic</a></li>
+                                            <li><a  href="contactUs.php">Contact</a></li>                
+                                        </ul>
+                                  </div>
+              </div>
         <div id="navigationLink">
              <a href="homePage.php">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="elbow.php">Elbow</a>   
         </div>
-        <div>
+        <div id="diseaseInfo">
            <h4>Symptoms:</h4>
            <p>Pain and tenderness in the bony knob on the outside of your elbow.<br/>
               Pain around the elbow that  may also radiate into the upper or lower arm.</p>

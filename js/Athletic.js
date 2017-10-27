@@ -239,15 +239,17 @@ dish[3] = "uniqueRunner4.jpg";
 dish[4] = "uniqueRunner5.jpg";
 dish[5] = "uniqueRunner6.jpg";
 function displayImage(){
-    if (curDish == 5)
+    if (curDish == 5){
         curDish = 0;
+        menuImage.src = "../images/" + dish[curDish];
+    }
     else
     {
         curDish++;
          document.getElementById("menuImage").src = "../images/" + dish[curDish];         
     }
    }     
- setInterval(displayImage, 500);
+ setInterval(displayImage, 2000);
  }
 });
 

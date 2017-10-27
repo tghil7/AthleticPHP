@@ -13,14 +13,14 @@ and open the template in the editor.
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <link type="text/css" rel="stylesheet" href="../style/athletic.css">
-      <script type ="text/javascript" src="../style/Athletic.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
+      <script src="../js/Athletic.js"></script>
     </head>
     <body class="container-fluid">
         <div id="wrapper">
         <div id="myNav">
                                <div id= "siteMenu" class="dropdown">
-				  <h6>Menu</h6>
+				  
 				   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
 					<ul class="dropdown-menu">
                                             <li><a href="homePage.php">Home</a></li>
@@ -50,14 +50,13 @@ and open the template in the editor.
         <div id="navigationLink">
             <a href="homePage.php">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="aboutUs.php">About Us</a>   
         </div>
+            <div id="aboutUsNote">
         <p id="description"> This website is the idea of a certified athletic trainer  who wanted to have a quick reference handy in order to 
         remind herself of athletic training notions she may have forgotten.We started working on the project during our free time. 
          Please free to send us any comments or proposed corrections.</p>
+            </div>
     
-        
-        
-        <p id="demo"></p>
-       <div id="mapholder" onload="getLocation()"></div>
+       
 
                 <footer class="footer"><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
     webmaster@athletictrainer.com</i></p></small</footer>
