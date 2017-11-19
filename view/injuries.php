@@ -18,7 +18,7 @@ and open the template in the editor.
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
       <script src="../js/Athletic.js"></script>
     </head>
-    <body class="container-fluid myBackground">
+    <body class="container-fluid">
        <div id="myNav">
                                <div id= "siteMenu" class="dropdown">
 				  
@@ -44,7 +44,7 @@ and open the template in the editor.
         <div id="navigationLink">
             <a href="../view/homePage.php">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="../view/homePage.php">Injuries</a>   
         </div>
-        <div id="myInjuryResult" style="margin-left: 20px;">
+        <div id="myInjuryResult" class="white myBackground" style="margin-left: 20px;">
         <?php
         
           if ($name ==  null){
@@ -63,7 +63,7 @@ and open the template in the editor.
                 echo ("Below are the results of your query:<br><br>  ");
                 
         ?>
-            <form action="ankle.php" method="post" >
+            <form action="#" method="post" >
                 <a href=" <?php echo ("../view/".$injury[3]);?>"><?php echo($injury[0]);?></a>	
               <br><br>
             </form>

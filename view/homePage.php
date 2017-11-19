@@ -11,7 +11,7 @@
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
       <script src="../js/Athletic.js"></script>
 </head>
-<body class="container-fluid">
+<body class="container-fluid home">
                         <div id="myNav">
                                 <div id= "siteMenu" class="dropdown">
 				  
@@ -20,7 +20,7 @@
                                             <li><a href="homePage.php">Home</a></li>
                                             <li><a href="aboutUs.php">About </a></li>
                                             <li><a href="Diagnostic.php">Diagnostic</a></li>
-                                            <li><a href="contactUs.php">Contact </a></li>
+                                            <li><a href="aboutUs.php#contactBody">Contact </a></li>
 					</ul>
                             
 				   
@@ -30,14 +30,19 @@
                                             <li><a href="homePage.php">Home</a></li>
                                             <li><a  href="aboutUs.php" >About</a></li>
                                             <li><a  href="Diagnostic.php">Diagnostic</a></li>
-                                            <li><a  href="contactUs.php">Contact</a></li>                
+                                            <li><a  href="aboutUs.php#contactBody">Contact</a></li>                
                                         </ul>
                                   </div>
                         </div>
 				  
 				  <div id="searchSection"  >
-				    <h3 class="carousel-caption">Learn about athletic training</h3>
-                                    <form action="../controller/index.php" method="post">
+                                      <div class="carousel-caption">
+				    <p  id="headerWord">Learn about athletic training</p>
+                                    <p id="headDetails">Use the diagnostic page to provide a possible diagnostic to your symptoms.<br>
+                                        You can also try to search for an athletic term you may not be familiar with <br/>
+                                        using the search box below. </p><br/>
+                                      </div>
+                                    <form action="../controller/index.php" method="post" class="blank">
 					   <input type="search" id="searchBox" name="action" placeholder="Search Athletic Keyword" > &nbsp; &nbsp;
                                            <button class= "btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
                                            

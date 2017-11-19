@@ -16,7 +16,7 @@ and open the template in the editor.
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
       <script src="../js/Athletic.js"></script>
     </head>
-    <body class="container-fluid myBackground">
+    <body class="container-fluid">
         <div id="myNav">
                                <div id= "siteMenu" class="dropdown">
 				  
@@ -39,10 +39,10 @@ and open the template in the editor.
                                         </ul>
                                   </div>
               </div>
-        <div id="navigationLink">
+        <div id="navigationLink" class="white myBackground">
              <a href="homePage.php">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="groin.php">Groin</a>   
         </div>
-         <div id="diseaseInfo">
+         <div id="diseaseInfo" class="white myBackground">
            <h4>Symptoms:</h4>
            <p>Pain and tenderness in the groin and the inside of the thigh.<br/>
              Pain when you bring your legs together.</p>
@@ -51,7 +51,6 @@ and open the template in the editor.
             <h4>Treatment:</h4><br>
             <p>Anti-inflammatory pain killers,Ice, Compression, active stretching and strengthening exercises.</p>
         </div>
-                  <footer class="footer"><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
-    webmaster@athletictrainer.com</i></p></small</footer>
+                
     </body>
 </html>

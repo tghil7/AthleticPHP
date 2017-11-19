@@ -16,7 +16,7 @@ and open the template in the editor.
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
       <script src="../js/Athletic.js"></script>
     </head>
-    <body class="container-fluid myBackground">
+    <body class="container-fluid">
         <div id="myNav">
                                <div id= "siteMenu" class="dropdown">
 				  
@@ -42,7 +42,7 @@ and open the template in the editor.
         <div id="navigationLink">
              <a href="homePage.php">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="elbow.php">Elbow</a>   
         </div>
-        <div id="diseaseInfo">
+        <div id="diseaseInfo" class="white myBackground">
            <h4>Symptoms:</h4>
            <p>Pain and tenderness in the bony knob on the outside of your elbow.<br/>
               Pain around the elbow that  may also radiate into the upper or lower arm.</p>
@@ -51,7 +51,6 @@ and open the template in the editor.
             <h4>Treatment:</h4><br>
             <p>Exercises for flexibility and arm muscle strength.</p>
         </div>
-                <footer class="footer"><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
-    webmaster@athletictrainer.com</i></p></small</footer>
+                
     </body>
 </html>

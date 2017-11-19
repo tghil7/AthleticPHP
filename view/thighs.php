@@ -16,7 +16,7 @@ and open the template in the editor.
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
       <script src="../js/Athletic.js"></script>
     </head>
-    <body class="container-fluid myBackground">
+    <body class="container-fluid">
        <div id="myNav">
                                <div id= "siteMenu" class="dropdown">
 				  
@@ -39,10 +39,10 @@ and open the template in the editor.
                                         </ul>
                                   </div>
               </div>
-        <div id="navigationLink">
+        <div id="navigationLink" class="white">
              <a href="homePage.php">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="thighs.php">Thighs</a>   
         </div>
-        <div id="diseaseInfo">
+        <div id="diseaseInfo" class="white myBackground">
            <h4>Symptoms:</h4>
            <p>Sudden and severe pain during exercise, along with a snapping or popping feeling.<br/>
                Pain in the back of the thigh and lower buttock when walking, straightening the leg, or bending over.<br/>

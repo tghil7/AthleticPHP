@@ -19,7 +19,7 @@ and open the template in the editor.
     
     </head>
     <body id="diagnosticBody">
-        <div id="wrapper" class="container-fluid white">
+        <div id="wrapper" class="container white">
               <div id="myNav">
                                <div id= "siteMenu" class="dropdown white">
 				 
@@ -28,7 +28,7 @@ and open the template in the editor.
                                             <li><a href="homePage.php">Home</a></li>
                                             <li><a href="aboutUs.php">About </a></li>
                                             <li><a href="Diagnostic.php">Diagnostic</a></li>
-                                            <li><a href="contactUs.php">Contact </a></li>
+                                            <li><a href="aboutUs.php#contactBody">Contact </a></li>
 					</ul>
                             
 				   
@@ -38,7 +38,7 @@ and open the template in the editor.
                                             <li><a href="homePage.php">Home</a></li>
                                             <li><a  href="aboutUs.php" >About</a></li>
                                             <li><a  href="Diagnostic.php">Diagnostic</a></li>
-                                            <li><a  href="contactUs.php">Contact</a></li>                
+                                            <li><a  href="aboutUs.php#contactBody">Contact</a></li>                
                                         </ul>
                                   </div>
               </div>
@@ -53,16 +53,79 @@ and open the template in the editor.
                      <input type="radio" name="part" id="part1" value="Elbow" >Elbow<br>
                       <input type="radio" name="part" id="part2" value="Ankle" >Ankle<br>
                       <input type="radio"  name="part" id="part3" value="Groin" >Groin<br>
-                      <input type="radio" name="part" id="part4" value="Thighs" >Thighs<br><br><br>
+                      <input type="radio" name="part" id="part4" value="Thighs" >Thighs<br>
+                      <input type="radio" name="part" id="part5" value="Knee" >Knee<br><br><br>
                       <button type="button" onclick="checkSelected()">Submit</button>
                       
                 </form>
             </div>
+         <section class="diseaseSection">     
+          <div id="ankleInfo" class="white myBackground">
+          <h4>Symptoms of an ankle sprain:</h4>
+          <p>Immediate swell and bruising of the ankle, Severe pain, unstable feeling at the ankle</p>
+          <h4>Severity:</h4>
+          <p>Variable (3 degrees)</p>
+          <h4>Treatment:</h4>
+          <p>Rest,Ice, Compression</p>
+                 <div id="video">
+                        <iframe  width="100%" height="auto" src="https://www.youtube.com/embed/deQjnm46nWM" frameborder="0" allowfullscreen></iframe>
+                 </div>
+          <br/>
+            <a href="../view/diagnostic.php" class="blackLink">Back</a>
+          </div>
             
-               
-            <footer class="footer"><small><i>Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
-                            webmaster@athletictrainer.com</i></small></footer>
-        </div>    
+          <div id="elbowInfo" class="blank">
+           <h4>Symptoms of a tennis elbow:</h4>
+           <p>Pain and tenderness in the bony knob on the outside of your elbow.<br/>
+              Pain around the elbow that  may also radiate into the upper or lower arm.</p>
+           <h4>Severity:</h4>
+           <p>Could be severe.</p>
+            <h4>Treatment:</h4><br>
+            <p>Exercises for flexibility and arm muscle strength.</p>
+            <br/>
+            <a href="../view/diagnostic.php">Back</a>
+          </div>
+            
+          <div id="groinInfo" class="white myBackground">
+           <h4>Symptoms of a groin pull:</h4>
+           <p>Pain and tenderness in the groin and the inside of the thigh.<br/>
+             Pain when you bring your legs together.</p>
+           <h4>Severity:</h4>
+           <p>Variable (3 degrees).</p>
+            <h4>Treatment:</h4><br>
+            <p>Anti-inflammatory pain killers,Ice, Compression, active stretching and strengthening exercises.</p>
+            <br/>
+            <a href="../view/diagnostic.php" class="blackLink">Back</a>
+        </div>
+            
+          <div id="kneeInfo" class="blank">
+           <h4>Symptoms of an ACL tear:</h4>
+           <p>A loud "pop" or a "popping" sensation in the knee, Severe pain and inability to continue activity, Loss of range of motion</p>
+           <h4>Severity:</h4>
+           <p>severe.</p>
+            <h4>Treatment:</h4><br>
+            <p>Rest, Compression, Ice.</p>
+            <br/>
+            <a href="../view/diagnostic.php">Back</a>
+        </div>
+            
+        <div id="thighsInfo" class="white myBackground">
+           <h4>Symptoms of a harmstring strain:</h4>
+           <p>Sudden and severe pain during exercise, along with a snapping or popping feeling.<br/>
+               Pain in the back of the thigh and lower buttock when walking, straightening the leg, or bending over.<br/>
+               Tenderness and bruising</p>
+           <h4>Severity:</h4>
+           <p>Variable (3 degrees).</p>
+            <h4>Treatment:</h4><br>
+            <p>Usually heals on their own,Ice, Compression, Elevation - keep your leg slightly raised.</p>
+            <br/>
+            <a href="../view/diagnostic.php" class="blackLink">Back</a>
+        </div>
+            
+         </section >         
+            
+        </div> 
+         
             
          <div class="modal fade" id="myElbowModal1" tabindex="-1">
                                  <div class="modial-dialog modal-sm">
@@ -223,7 +286,7 @@ and open the template in the editor.
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
-                                                 <p>Pain in the back of the thigh and lower buttock when walking, straightening the leg, or bending over?</p>
+                                                 <p>Does the knee have laxity?</p>
                                             </div>
                                             <div class="modal-footer">
                                                   <a href="#" id="kneeQ1y" class="btn alert-danger" data-dismiss="modal" >Yes</a>
@@ -238,7 +301,7 @@ and open the template in the editor.
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
-                                                 <p>Sudden and severe pain during exercise, along with a snapping or popping feeling?</p>
+                                                 <p>Any swelling, redness or heat?</p>
                                             </div>
                                             <div class="modal-footer">
                                                   <a href="#" id="kneeQ2y" class="btn alert-danger" data-dismiss="modal" >Yes</a>
@@ -253,11 +316,111 @@ and open the template in the editor.
                                  <div class="modial-dialog modal-sm">
                                        <div class="modal-content">                                        
                                             <div class="modal-body">
-                                                 <p>Tenderness and bruising in thigh?</p>
+                                                 <p>Does the knee give out or buckle?</p>
                                             </div>
                                             <div class="modal-footer">
                                                   <a href="#" id="kneeQ3y" class="btn alert-danger" data-dismiss="modal" >Yes</a>
                                                   <a href="#" id="kneeQ3n" class="btn alert-success" data-dismiss="modal">No</a>
+                                        
+                                            </div>
+                                        </div>    
+                                 </div>
+          </div>
+        
+        <div class="modal fade" id="elbowConfirm" tabindex="-1">
+                                 <div class="modial-dialog modal-sm">
+                                       <div class="modal-content">                                        
+                                            <div class="modal-body">
+                                                 <p>Looks like a tennis elbow. More information about this injury on the next page...;</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                  <a href="#" id="elbowGo" class="btn alert-danger" data-dismiss="modal" >OK</a>
+                                                  <a href="../view/Diagnostic.php" id="elbowNo" class="btn alert-success" data-dismiss="modal">No, thanks</a>
+                                        
+                                            </div>
+                                        </div>    
+                                 </div>
+          </div>
+        
+         <div class="modal fade" id="okConfirm" tabindex="-1">
+                                 <div class="modial-dialog modal-sm">
+                                       <div class="modal-content">                                        
+                                            <div class="modal-body">
+                                                 <p>Sounds like a temporary discomfort</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                  <a href="../view/Diagnostic.php" id="okButton" class="btn alert-success" data-dismiss="modal" >OK</a>
+                                            </div>
+                                        </div>    
+                                 </div>
+          </div>
+        
+         <div class="modal fade" id="incomplete" tabindex="-1">
+                                 <div class="modial-dialog modal-sm">
+                                       <div class="modal-content">                                        
+                                            <div class="modal-body">
+                                                 <p>You are probably OK. Not all symptoms were detected.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                  <a href="../view/Diagnostic.php" id="okButton" class="btn alert-success" data-dismiss="modal" >OK</a>
+                                            </div>
+                                        </div>    
+                                 </div>
+          </div>
+           <div class="modal fade" id="sprainConfirm" tabindex="-1">
+                                 <div class="modial-dialog modal-sm">
+                                       <div class="modal-content">                                        
+                                            <div class="modal-body">
+                                                 <p>Looks like an ankle sprain. More information about this injury on the next page...</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                  <a href="#" id="strainGo" class="btn alert-danger" data-dismiss="modal" >OK</a>
+                                                  <a href="../view/Diagnostic.php" id="strainNo" class="btn alert-success" data-dismiss="modal">No, thanks</a>
+                                        
+                                            </div>
+                                        </div>    
+                                 </div>
+          </div>
+        
+          <div class="modal fade" id="groinConfirm" tabindex="-1">
+                                 <div class="modial-dialog modal-sm">
+                                       <div class="modal-content">                                        
+                                            <div class="modal-body">
+                                                 <p>Looks like an groin pull injury. More information about it on the next page...</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                  <a href="#" id="groinGo" class="btn alert-danger" data-dismiss="modal" >OK</a>
+                                                  <a href="../view/Diagnostic.php" id="groinNo" class="btn alert-success" data-dismiss="modal">No, thanks</a>
+                                        
+                                            </div>
+                                        </div>    
+                                 </div>
+          </div>
+        
+        <div class="modal fade" id="harmstringConfirm" tabindex="-1">
+                                 <div class="modial-dialog modal-sm">
+                                       <div class="modal-content">                                        
+                                            <div class="modal-body">
+                                                 <p>Looks like an harmstring strain. More information about this injury on the next page...</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                  <a href="#" id="harmStringGo" class="btn alert-danger" data-dismiss="modal" >OK</a>
+                                                  <a href="../view/Diagnostic.php" id="harmStringNo" class="btn alert-success" data-dismiss="modal">No, thanks</a>
+                                        
+                                            </div>
+                                        </div>    
+                                 </div>
+          </div>
+        
+         <div class="modal fade" id="kneeConfirm" tabindex="-1">
+                                 <div class="modial-dialog modal-sm">
+                                       <div class="modal-content">                                        
+                                            <div class="modal-body">
+                                                 <p>Looks like an ACL tear. More information about this injury on the next page....</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                  <a href="#" id="kneeGo" class="btn alert-danger" data-dismiss="modal" >OK</a>
+                                                  <a href="../view/Diagnostic.php" id="kneeNo" class="btn alert-success" data-dismiss="modal">No, thanks</a>
                                         
                                             </div>
                                         </div>    

@@ -16,7 +16,7 @@ and open the template in the editor.
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
       <script src="../js/Athletic.js"></script>
     </head>
-    <body class="container-fluid myBackground">
+    <body class="container-fluid">
          <div id="myNav">
                                <div id= "siteMenu" class="dropdown">
 				  
@@ -39,11 +39,11 @@ and open the template in the editor.
                                         </ul>
                                   </div>
               </div>
-        <div id="navigationLink">
+        <div id="navigationLink" class="white">
             <a href="../view/homePage.php">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="../view/ankle.php">Ankle</a>   
         </div>
         
-        <div id="diseaseInfo">
+        <div id="diseaseInfo" class="white myBackground">
           <h4>Symptoms:</h4>
           <p>Immediate swell and bruising of the ankle, Severe pain, unstable feeling at the ankle</p>
           <h4>Severity:</h4>
@@ -56,7 +56,6 @@ and open the template in the editor.
           </div>    
        
        
-               <footer class="footer"><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
-    webmaster@athletictrainer.com</i></p></small</footer>
+               
     </body>
 </html>

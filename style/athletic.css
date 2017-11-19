@@ -23,15 +23,51 @@ body{
   
 }
 
+#headerWord{
+    font-size: medium;
+}
+
+#headerDetails{
+    font-size: x-small;
+}
+
+.modal{
+    top: 40%;
+    left: 40%;
+    align-content: center;
+}
+
+.home{
+   width: 100%;
+   height: 100%;
+}
 button{
     color: black !important;
 }
+
 #diseaseInfo{
-  margin-top: 7%;  
+  margin-top: 7%; 
+  
+}
+
+.pageText{
+    margin-top: 15px;
 }
 
 .myBackground{
     background-image: url('../images/jumpman.jpg') !important;
+    margin-top: 150px;
+    padding-left: 2px;
+}
+.blackLink{
+    color: black !important;
+    text-decoration: none;
+}
+
+.blank{
+    margin-top: 150px;
+    padding-left: 2px;
+    color: black !important;
 }
 
 #runner{
@@ -41,12 +77,13 @@ button{
 #contactBody{
     background-image: url('../images/jumpman.jpg') !important;
     background-repeat: no-repeat  !important;
-    display:flex;
+    width:100%;
+    margin-top: 100px;
+    padding-top: 30px;
    
 }
 
 #diagnosticBody{
-    background-image: url('../images/jumpman.jpg') !important;
     background-repeat: no-repeat  !important;
     display:flex;
 }
@@ -63,6 +100,7 @@ button{
     margin-top: 30%;
     display: flex;
     flex-wrap: wrap;
+    color: black !important;
 }
 
 #wrapper{
@@ -74,6 +112,8 @@ button{
 #navigationLink{
     margin-top: 4%;
     margin-bottom: 4%;
+    width: 100%;  
+    color: darkblue;
    
 }
 
@@ -87,6 +127,11 @@ button{
 .carousel-inner .item img
 {  
     height: auto;
+    width: 100%;
+}
+
+#myCarousel{
+    height: 75%;
     width: 100%;
 }
 
@@ -111,14 +156,14 @@ button{
 
 #searchSection
 {
-  position: fixed;
-  z-index: 10;
+ position: fixed;
+  z-index: 1;
+  display: flex;
   justify-content: center;
-  transform: translate(30%, 25%); 
   align-items: center; 
-  justify-content: center;
-  order: 2;
-  top: 15%;
+  top: 38%;
+  width: 50%;
+  height: auto;
   
   
 }
@@ -150,7 +195,9 @@ button{
   color: black;
 }
 
-
+.white{
+    color: whitesmoke;
+}
 
 
 #contactPage
@@ -163,6 +210,10 @@ button{
 {
     height: auto;
     width:  100%;
+}
+
+button{
+    color: black !important;
 }
 
 #imageTrail
@@ -191,6 +242,12 @@ button{
 textarea{
     width: 100%;
 }
+
+#Contact{
+    color: black !important;
+}
+
+
 }
 
 
@@ -210,8 +267,50 @@ textarea{
     font-family: 'Pontano Sans', sans-serif !important;
 }
 
-.myBackground{
+.blackLink{
+    color: black;
+}
+
+#headerWord{
+    font-size: large;
+}
+
+#headerDetails{
+    font-size: medium;
+}
+
+.blank{
+    margin-top: 150px;
+    padding-left: 2px;
+    color: black !important;
+}
+
+
+.diseaseSection{
+    width: 100%;
+}
+
+
+.pageText{
+    margin-top: 30px;
+}
+
+
+#contactBody{
     background-image: url('../images/jumpman.jpg') !important;
+    background-repeat: no-repeat  !important;
+    width:100%;
+    margin-top: 100px;
+    padding-top: 30px;
+   
+}
+
+.myBackground{
+    width: 100%;
+    height: 20%;
+    margin-top: 150px;
+    background-image: url('../images/jumpman.jpg') !important;
+    padding-left: 1%;
 }
 
 
@@ -257,15 +356,14 @@ textarea{
   z-index: 1;
   display: flex;
   justify-content: center;
-  transform: translate(30%, 25%); 
   align-items: center; 
-  justify-content: center;
-  order: 2;
-  top: 15%;
   top: 38%;
-  left: 35%;
-  
-  
+  width: 50%;
+  height: auto;  
+}
+
+#headerWord{
+    margin-bottom: 20px;
 }
 
 button{
@@ -275,11 +373,6 @@ button{
 #Contact{
     color: black !important;
 }
-
-
-
-
-
 
 
 #siteMenu
@@ -296,6 +389,11 @@ button{
   margin-left: 5%;
   margin-right: 5%;
   color: white;
+}
+
+.modal fade{
+    top: 40%;
+    left: 40%;
 }
 
 
@@ -323,6 +421,10 @@ button{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    color: black;
+      margin-bottom: 50px;
+   padding-bottom: 10px;
+
 }
 
 #wrapper{
@@ -342,8 +444,7 @@ button{
 #contactPage
 {
   width: 100%;
-   background-image: url('../images/jumpman.jpg') !important;
-   padding-left: 2%;
+  padding-left: 2%;
   
 }
 
@@ -391,11 +492,7 @@ h5{
     margin-bottom: 25%;
 }
 
-#bodyPart{
-    margin-bottom: 20%;
-   background-image: url('../images/jumpman.jpg') !important;
-    padding-bottom: 5%;
-}
+
 
 }
 

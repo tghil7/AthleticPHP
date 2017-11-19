@@ -17,6 +17,9 @@
              else if ((document.getElementById("part4").checked) === true){
                  showThighQuestions();
              }
+             else if ((document.getElementById("part5").checked) === true){
+                 showKneeQuestions();
+             }
              
               
  }
@@ -27,23 +30,25 @@ function showElbowQuestions(){
            $("#elbowQ1y").click(function(){
                  $('#myElbowModal2').modal('show');
                 $("#elbowQ2y").click(function(){
-                 confirm ("Looks like a tennis elbow. More information about this injury on the next page...");
-                  window.open("../view/elbow.php", "_self");
+                 $('#elbowConfirm').modal('show');
+                  $("#elbowGo").click(function(){
+                     window.open("../view/diagnostic.php#elbowInfo", "_self");
+                  });
                  });
                  
                  $("#elbowQ2n").click(function(){
-                 alert ("You are ok");
+                 $('#okConfirm').modal('show'); 
                  });
            });
            
             $("#elbowQ1n").click(function(){
              $('#myElbowModal2').modal('show');
                $("#elbowQ2y").click(function(){
-                 alert ("You are probably ok. Not all symptoms were detected. ");
+                 $('#incomplete').modal('show');
                  });
                  
                  $("#elbowQ2n").click(function(){
-                 alert ("You are ok.It looks like it is benign.");
+                 $('#incomplete').modal('show');
                  });
                 
            });
@@ -59,26 +64,29 @@ function showAnkleQuestions(){
                  $("#ankleQ2y").click(function(){
                      $('#myAnkleModal3').modal('show');
                       $("#ankleQ3y").click(function(){
-                         confirm ("Looks like an ankle sprain. More information about this injury on the next page...");
-                          window.open("../view/ankle.php", "_self");
+                       $('#sprainConfirm').modal('show'); 
+                       $("strainGo").click(function(){
+                          window.open("../view/diagnostic.php#ankleInfo", "_self");
+                         });
+                      });
+                      $("#ankleQ3n").click(function(){
+                        $('#okConfirm').modal('show');
                       });
                  });
                  
                  $("#ankleQ2n").click(function(){
-                 alert ("You are ok");
+                 $('#okConfirm').modal('show');
                  });
            });
            
             $("#ankleQ1n").click(function(){
              $('#myAnkleModal2').modal('show');
                $("#ankleQ2y").click(function(){
-                 alert ("You are probably ok. Not all symptoms were detected. ");
-                  window.open("../view/diagnostic.php", "_self");
+                 $('#incomplete').modal('show');
                  });
                  
                  $("#ankleQ2n").click(function(){
-                 alert ("You are ok.This is probably benign");
-                 window.open("../view/diagnostic.php", "_self"); 
+                $('#incomplete').modal('show'); 
                  });
                 
            });
@@ -92,26 +100,25 @@ function showGroinQuestions(){
            $("#groinQ1y").click(function(){
                  $('#myGroinModal2').modal('show');
                  $("#groinQ2y").click(function(){
-                         confirm ("Looks like an groin pull injury. More information about it on the next page...");
-                          window.open("../view/groin.php", "_self");
-                   
+                    $('#groinConfirm').modal('show');
+                    $("#groinGo").click(function(){
+                    window.open("../view/diagnostic.php#groinInfo", "_self");
+                     });
                  });
                  
                  $("#groinQ2n").click(function(){
-                 alert ("You are ok");
+                 $('#okConfirm').modal('show');
                  });
            });
            
             $("#groinQ1n").click(function(){
              $('#myGroinModal2').modal('show');
                $("#groinQ2y").click(function(){
-                 alert ("You are probably ok. Not all symptoms were detected. ");
-                  window.open("../view/diagnostic.php", "_self");
+                 $('#incomplete').modal('show');
                  });
                  
                  $("#groinQ2n").click(function(){
-                 alert ("You are ok.Not this disease.");
-                 window.open("../view/diagnostic.php", "_self"); 
+                   $('#incomplete').modal('show');
                  });
                 
            });
@@ -127,26 +134,29 @@ function showThighQuestions(){
                  $("#thighQ2y").click(function(){
                      $('#myThighModal3').modal('show');
                       $("#thighQ3y").click(function(){
-                        confirm ("Looks like an harmstring strain. More information about this injury on the next page...");
-                          window.open("../view/thighs.php", "_self");
+                         $('#harmstringConfirm').modal('show');
+                         $("#harmStringGo").click(function(){
+                            window.open("../view/diagnostic.php#thighsInfo", "_self");
+                          });
+                      });
+                      $("#thighQ3n").click(function(){
+                       $('#okConfirm').modal('show');
                       });
                  });
                  
                  $("#thighQ2n").click(function(){
-                 alert ("You are ok");
+                 $('#incomplete').modal('show');
                  });
            });
            
             $("#thighQ1n").click(function(){
              $('#myThighModal2').modal('show');
                $("#thighQ2y").click(function(){
-                 alert ("You are probably ok. Not all symptoms were detected. ");
-                  window.open("../view/diagnostic.php", "_self");
+                 $('#incomplete').modal('show');
                  });
                  
                  $("#thighQ2n").click(function(){
-                 alert ("You are ok.Benign.");
-                 window.open("../view/diagnostic.php", "_self"); 
+                 $('#incomplete').modal('show'); 
                  });
                 
            });
@@ -162,26 +172,33 @@ function showThighQuestions(){
                  $("#kneeQ2y").click(function(){
                      $('#myKneeModal3').modal('show');
                       $("#kneeQ3y").click(function(){
-                       confirm ("Looks like an ACL tear. More information about this injury on the next page...");
-                          window.open("../view/thighs.php", "_self");
+                       $('#kneeConfirm').modal('show'); 
+                         $("#kneeGo").click(function(){
+                          window.open("../view/diagnostic.php#kneeInfo", "_self");
+                         });
                       });
+                       $("#KneeQ3n").click(function(){
+                       $('#okConfirm').modal('show');
+                       });
                  });
                  
                  $("#kneeQ2n").click(function(){
-                 alert ("You are ok");
+               $('#incomplete').modal('show');
                  });
            });
+           
+            
            
             $("#kneeQ1n").click(function(){
              $('#myKneeModal2').modal('show');
                $("#kneeQ2y").click(function(){
-                 alert ("You are probably ok. Not all symptoms were detected. ");
-                  window.open("../view/diagnostic.php", "_self");
+                 $('#incomplete').modal('show');
+                 window.open("../view/diagnostic.php", "_self");
                  });
                  
                  $("#kneeQ2n").click(function(){
-                 alert ("You are ok.Not this disease.");
-                 window.open("../view/knee.php", "_self"); 
+                 $('#incomplete').modal('show');
+                 window.open("../view/diagnostic.php", "_self"); 
                  });
                 
            });
@@ -202,18 +219,18 @@ function sendMessage(){
      document.getElementById("firstName").innerHTML ="";
     document.getElementById("lastName").innerHTML ="";
     document.getElementById("email").innerHTML ="";
-    alert("Your message was successfully sent") ;
+    alert("Your message was successfully sent!") ;
 }
 
 var x = document.getElementById("demo");
 
-function getLocation() {
+/***function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
     } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
-}
+}***/
 
 
 var session;
@@ -249,7 +266,7 @@ function displayImage(){
          document.getElementById("menuImage").src = "../images/" + dish[curDish];         
     }
    }     
- setInterval(displayImage, 2000);
+ setInterval(displayImage, 300);
  }
 });
 
