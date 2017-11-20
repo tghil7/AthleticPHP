@@ -11,7 +11,7 @@
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pontano+Sans" rel="stylesheet">
       <script src="../js/Athletic.js"></script>
 </head>
-<body class="container-fluid home">
+<body class="container-fluid">
                         <div id="myNav">
                                 <div id= "siteMenu" class="dropdown">
 				  
@@ -72,11 +72,7 @@
 								 </div>
 							  </div>
                                                            					  
-			      </div>
-                             
-				
-   
-   		
+			      </div>		
 		 
      <footer class="footer"><small><i>Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
                             webmaster@athletictrainer.com</i></small></footer>		 

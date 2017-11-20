@@ -19,7 +19,7 @@ and open the template in the editor.
     
     </head>
     <body id="diagnosticBody">
-        <div id="wrapper" class="container white">
+        <div id="wrapper" class="container-fluid white">
               <div id="myNav">
                                <div id= "siteMenu" class="dropdown white">
 				 
