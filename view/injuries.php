@@ -27,7 +27,7 @@ and open the template in the editor.
                                             <li><a href="../view/homePage.php">Home</a></li>
                                             <li><a href="../view/aboutUs.php">About </a></li>
                                             <li><a href="../view/Diagnostic.php">Diagnostic</a></li>
-                                            <li><a href="../view/contactUs.php">Contact </a></li>
+                                            <li><a href="aboutUs.php#contactBody">Contact </a></li>
 					</ul>
                             
 				   
@@ -37,14 +37,14 @@ and open the template in the editor.
                                             <li><a href="../view/homePage.php">Home</a></li>
                                             <li><a  href="../view/aboutUs.php" >About</a></li>
                                             <li><a  href="../view/Diagnostic.php">Diagnostic</a></li>
-                                            <li><a  href="../view/contactUs.php">Contact</a></li>                
+                                            <li><a  href="aboutUs.php#contactBody">Contact</a></li>                
                                         </ul>
                                   </div>
               </div>
         <div id="navigationLink">
             <a href="../view/homePage.php">Home</a><span class="glyphicon glyphicon-chevron-right"></span><a href="../view/homePage.php">Injuries</a>   
         </div>
-        <div id="myInjuryResult" class="white myBackground" style="margin-left: 20px;">
+        <div id="myInjuryResult" class="white myBackground">
         <?php
         
           if ($name ==  null){
