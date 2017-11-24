@@ -27,7 +27,7 @@ and open the template in the editor.
                                             <li><a href="../view/homePage.php">Home</a></li>
                                             <li><a href="../view/aboutUs.php">About </a></li>
                                             <li><a href="../view/Diagnostic.php">Diagnostic</a></li>
-                                            <li><a href="aboutUs.php#contactBody">Contact </a></li>
+                                            <li><a href="../view/aboutUs.php#contactBody">Contact </a></li>
 					</ul>
                             
 				   
@@ -37,7 +37,7 @@ and open the template in the editor.
                                             <li><a href="../view/homePage.php">Home</a></li>
                                             <li><a  href="../view/aboutUs.php" >About</a></li>
                                             <li><a  href="../view/Diagnostic.php">Diagnostic</a></li>
-                                            <li><a  href="aboutUs.php#contactBody">Contact</a></li>                
+                                            <li><a  href="../view/aboutUs.php#contactBody">Contact</a></li>                
                                         </ul>
                                   </div>
               </div>
