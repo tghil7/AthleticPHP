@@ -64,7 +64,7 @@ and open the template in the editor.
                 
         ?>
             <form action="#" method="post" >
-                <a href=" <?php echo ("../view/".$injury[3]);?>"><?php echo($injury[0]);?></a>	
+                <a href=" <?php echo ("../view/".$injury[3]);?>" class="blackLink"><?php echo($injury[0]);?></a>	
               <br><br>
             </form>
           
