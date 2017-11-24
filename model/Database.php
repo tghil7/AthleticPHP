@@ -13,9 +13,9 @@
  */
 class Database {
     public static function getDB(){
-        $username = 'root';  // Your username provided by instructor
-$password = 'peacetghil5m';  // Your password provided by instructor
-  $dsn = "mysql:host=localhost;dbname=athleticdb";
+        $username = 'athleticdb';  // Your username provided by instructor
+$password = 'Wg5K~amPK?9B';  // Your password provided by instructor
+  $dsn = "mysql:host=mysql3.gear.host;dbname=athleticdb";
     try {
     $db = new PDO($dsn, $username, $password);
     return $db;
