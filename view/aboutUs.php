@@ -52,8 +52,12 @@ and open the template in the editor.
         </div>
             <div id="aboutUsNote" class="pageText">
         <p id="description"> This website is the idea of a certified athletic trainer  who wanted to have a quick reference handy in order to 
-        remind herself of athletic training notions she may have forgotten.We started working on the project during our free time. 
-         Please free to send us any comments or proposed corrections.</p>
+        remind herself of athletic training notions she may have forgotten.We started working on the project during our free time. The certified athletic
+        trainer is now pursuing other career opportunities in physical therapy, but we have decided to continue to work on improving the quality of the
+        information displayed on this website.<br/>
+        I believe your input will be very helpful in the purpose of providing quality information for other individuals just starting in
+        the field of sports medicine and physical therapy. 
+         Please feel free to send us any comments or proposed corrections by using the contact box. We truly appreciate your help.</p>
             </div>    
      </div>
         <section id="contactBody" class="white">  

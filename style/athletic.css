@@ -62,9 +62,15 @@ button{
 }
 
 .myBackground{
-    background-image: url('../images/jumpman.jpg') !important;
+    background-image: url('../images/outside.jpg') !important;
     margin-top: 150px;
     padding-left: 2px;
+}
+
+.alternateBack{
+    background-image: url('../images/smiling.jpeg') !important;
+    margin-top: 150px;
+    padding-left: 2px; 
 }
 .blackLink{
     color: black !important;
@@ -263,7 +269,7 @@ textarea{
 
 
 #infoDiv{
-    background-image: url('../images/athletic.JPG');
+    background-image: url('../images/box.jpeg');
     background-repeat:no-repeat;
     width: 100%;
     height:auto;
@@ -307,7 +313,7 @@ textarea{
     background-image: url('../images/jumpman.jpg') !important;
     background-repeat: no-repeat  !important;
     width:100%;
-    margin-top: 100px;
+    margin-top: 50px;
     padding-top: 30px;
    
 }
@@ -316,8 +322,16 @@ textarea{
     width: 100%;
     height: 20%;
     margin-top: 150px;
-    background-image: url('../images/jumpman.jpg') !important;
+    background-image: url('../images/outside.jpg') !important;
     padding-left: 1%;
+}
+
+.alternateBack{
+   width: 100%;
+    height: 20%;
+    margin-top: 150px;
+    background-image: url('../images/smiling.jpeg') !important;
+    padding-left: 1%; 
 }
 
 
@@ -483,7 +497,7 @@ h5{
 
 
 #aboutUsNote{
-    margin-bottom: 25%;
+    margin-bottom: 10%;
 }
 
 

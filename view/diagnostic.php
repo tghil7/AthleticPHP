@@ -67,9 +67,7 @@ and open the template in the editor.
           <p>Variable (3 degrees)</p>
           <h4>Treatment:</h4>
           <p>Rest,Ice, Compression</p>
-                 <div id="video">
-                        <iframe  width="100%" height="auto" src="https://www.youtube.com/embed/deQjnm46nWM" frameborder="0" allowfullscreen></iframe>
-                 </div>
+                 
           <br/>
             <a href="../view/diagnostic.php" class="blackLink">Back</a>
           </div>
@@ -86,7 +84,7 @@ and open the template in the editor.
             <a href="../view/diagnostic.php">Back</a>
           </div>
             
-          <div id="groinInfo" class="white myBackground">
+          <div id="groinInfo" class="white alternateBack">
            <h4>Symptoms of a groin pull:</h4>
            <p>Pain and tenderness in the groin and the inside of the thigh.<br/>
              Pain when you bring your legs together.</p>

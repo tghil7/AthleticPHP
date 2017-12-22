@@ -80,9 +80,11 @@ and open the template in the editor.
         ?>
         </div>
         <div>
-          <script>
+            <br/>
+            <p><strong>For further search on the web, please try again below:</strong></p><br/>
+  <script>
   (function() {
-    var cx = '015021700897784157557:hdwa6tps__u';
+    var cx = '011288881374594038238:aqap6ljnbem';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -91,7 +93,7 @@ and open the template in the editor.
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>  
+<gcse:searchbox-only></gcse:searchbox-only>
         </div>
                <footer class="footer" ><p><small><i> Copyright &copy; <?php echo date('Y')  ?> All rights reserved. The Athletic Trainer.<a href="mailto:webmaster@athletictrainer.com">
     webmaster@athletictrainer.com</i></p></small</footer>
